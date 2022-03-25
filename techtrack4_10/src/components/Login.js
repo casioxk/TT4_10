@@ -1,26 +1,26 @@
 import React from "react";
 
 export default function Login() {
-  const [userName, setUsername] = React.useState("")
-  const [passWord, setPassword] = React.useState("")
+  const [userName, setUsername] = React.useState("");
+  const [passWord, setPassword] = React.useState("");
 
-  function handleChangeUsername (){
-    setPassword()
+  function handleChangeUsername() {
+    setPassword();
   }
-  function handleChangePassword (){
-    setPassword()
+  function handleChangePassword() {
+    setPassword();
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const data = new FormData(e.target)
-  }
+    const data = new FormData(e.target);
+  };
 
   React.useEffect(() => {
     fetch("https://")
-        .then(res => res.json())
-        .then(data => setUsername())
-}, [])
+      .then((res) => res.json())
+      .then((data) => setUsername());
+  }, []);
   return (
     <div>
       <form>

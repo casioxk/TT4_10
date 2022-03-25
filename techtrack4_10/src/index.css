@@ -1,4 +1,12 @@
-.nav{
+.navbar{
   display: flexbox;
   align-self: center;
+  background-color: red;
+  
 }
+
+.Nav--side{
+  display: flex;
+  align-items: flex-end;
+}
+

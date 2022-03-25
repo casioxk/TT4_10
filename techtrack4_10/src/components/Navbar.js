@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function Navbar() {
     return (
-        <nav >
+        <nav className="navbar">
             <h2 >DBS</h2>
-            <h4 >Log In</h4>
-            <h4 >Register</h4>
+            <h4 className="Nav--side">Log In</h4>
+            <h4 className="Nav--side">Register</h4>
         </nav>
     )
 }

@@ -10,6 +10,12 @@ export default function Login() {
   function handleChangePassword (){
     setPassword()
   }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const data = new FormData(e.target)
+  }
+
   React.useEffect(() => {
     fetch("https://")
         .then(res => res.json())
@@ -18,11 +24,12 @@ export default function Login() {
   return (
     <div>
       <form>
-        <label>Username</label>
+        <label>Username </label>
         <input placeholder="Username" onChange={handleChangeUsername}></input>
-        <label>Password</label>
+        <label>Password </label>
         <input placeholder="Password" onChange={handleChangePassword}></input>
       </form>
+      <button onSubmit={handleSubmit}>Log In</button>
     </div>
   );
 }
